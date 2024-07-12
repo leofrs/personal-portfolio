@@ -23,7 +23,7 @@ export default function Content() {
   };
   return (
     <section className="flex w-full h-full">
-      <menu className=" w-2/6 flex flex-col justify-between items-center cursor-default bg-[#222222]">
+      <menu className=" w-[25%] flex flex-col justify-between items-center cursor-default ">
         <div className="w-full h-[270px] flex flex-col items-center p-4 gap-5">
           <img
             src={FotoPerfil}
@@ -69,20 +69,35 @@ export default function Content() {
         <div className="w-full h-[270px] p-4">
           <ul className="grid grid-cols-3 w-full h-full justify-items-center items-end pb-10">
             <li>
-              <FaLinkedin size={30} color="#79b6c9" />
+              <a
+                href="https://www.linkedin.com/in/leofrs/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaLinkedin size={30} />
+              </a>
             </li>
             <li>
-              <FaGithub size={30} />
+              <a
+                href="https://github.com/leofrs"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {" "}
+                <FaGithub size={30} />
+              </a>
             </li>
             <li>
-              <AiOutlineMail size={30} />
+              <a href="mailto:leofrrodrigues86@gmail.com">
+                <AiOutlineMail size={30} />
+              </a>
             </li>
           </ul>
         </div>
       </menu>
 
-      <main className="w-5/6 h-full bg-[#151515]">
-        <div className="w-full h-full p-10">{renderContent()}</div>
+      <main className="w-[75%] h-full">
+        <div className="w-full h-full p-3">{renderContent()}</div>
       </main>
     </section>
   );

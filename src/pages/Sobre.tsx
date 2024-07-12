@@ -30,7 +30,7 @@ export default function Sobre() {
       </p>
 
       <div className="fixed bottom-10 right-0 w-4/6 h-[50px]">
-        <ul className="flex gap-10">
+        <ul className="flex gap-10 justify-center">
           <li title="React">
             <FaReact size={35} color="#79b6c9" />
           </li>
