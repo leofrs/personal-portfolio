@@ -23,7 +23,7 @@ export default function Content() {
   };
   return (
     <section className="flex w-full h-full">
-      <menu className=" w-[25%] flex flex-col justify-between items-center cursor-default ">
+      <menu className=" w-[25%] flex flex-col justify-between items-center cursor-default border-r rounded-xl">
         <div className="w-full h-[270px] flex flex-col items-center p-4 gap-5">
           <img
             src={FotoPerfil}
@@ -96,7 +96,7 @@ export default function Content() {
         </div>
       </menu>
 
-      <main className="w-[75%] h-full">
+      <main className="w-[75%] h-full px-5">
         <div className="w-full h-full p-3">{renderContent()}</div>
       </main>
     </section>
